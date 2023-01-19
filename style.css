@@ -1,0 +1,205 @@
+*{font-family: 'Roboto', sans-serif;
+box-sizing: border-box;
+margin: auto;}
+
+p{font-size: .9rem}
+
+a{font-size: .9rem;
+    text-decoration: none;
+    color:black}
+
+h3{font-size: 1.5rem;
+padding: 10px;}
+
+img{width:100%}
+
+.description{font-size: 1rem;
+display: none;}
+
+/*header*/
+header{background-color: #EAC926;
+padding: 10px;}
+
+.header-logo{display: flex;
+justify-content: space-around;
+margin-bottom: 3%;}
+
+.header-logo div{
+justify-content: space-around;}
+
+.header-busqueda{display: flex;
+justify-items: end;}
+
+.header-busqueda input:hover{background-color:#ebebeb}
+
+.header-busqueda button{background-color:white;}
+
+header p{text-align: center;
+margin-bottom: 2%;}
+
+nav{display: flex;
+    justify-content: space-around;
+    flex-wrap:nowrap;
+margin-bottom: 2%;}
+
+nav ol{display: flex;}
+
+.header-burger-menu{
+    color: white;
+    background-color: #03264C;
+    border-radius: 5px;
+    padding: 3px 10px;
+    display: block;
+    margin: auto;}
+
+    /*main*/
+
+main{width: 100%; 
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: auto;
+    }
+
+.main-banner{width: 100%;
+margin: auto;}
+
+main section{margin: auto;}
+
+.main-caja{background-color: #ebebeb;
+padding: 15px;
+}
+
+main section{width:100%;}
+
+.main-card{border: #ebebeb 1px solid;
+     margin-top: 30px;
+     position: relative;}
+
+.main-card-fig{display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;}
+
+figcaption .value{width: 70%;
+font-size: 1.1rem;}
+
+figcaption .percent{width: 30%;
+font-size: 1rem;
+color:#39b54a;}
+
+main figure{
+    margin: 10px 10px;
+    padding: 15px; background-color: white;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);}
+
+.fa-solid.fa-truck{
+    display: block;
+    font-size: 1rem;
+    width: 30px;
+    height: 30px;
+    color: #39b54a;
+    border: 1px solid #39b54a;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: -25px;
+    right: -1px;}
+
+/*footer*/
+.footer-article{
+    text-align: center;
+    padding: 3px;
+    margin: 3px;
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;}
+
+.footer-article i{font-size: 2em;
+margin-bottom: 10px;
+color: #03264C;
+padding: 10px;}
+
+
+/*style-registrer*/
+.registrer{margin: 0%;
+    padding: 3%;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #ebebeb;
+    text-decoration: none;
+    color:#03264C;
+display: flex;
+flex-direction: column;
+}
+.registrer fieldset{border: none;}
+.registrer input{width: 90vw;}
+.registrer input:hover{background-color: #EAC926;}
+
+.registrer button{
+    width: 30vw;
+    color: white;
+    background-color:#03264C;
+    padding: 2%;
+    margin-bottom: 3%;
+    border-radius: 30px;}
+
+.registrer button:active{border: #EAC926 2px solid;}
+    
+    .registrer a{background-color:#03264C;
+        color: white;}
+.registrer .enviar{display:flex;
+    flex-direction: column;
+justify-content: center;}
+    
+
+/*styles-login*/
+.login{box-sizing: border-box;
+    background-color: #ebebeb;}
+.login form{display: flex;
+justify-content: center;
+flex-wrap: wrap;
+margin: 0%;
+padding: 3%;}
+
+.login input{background-color: white;
+width: 100%;
+margin: 5% 10%;
+padding: 2%;}
+
+.login input:focus{background-color: #EAC926;}
+.login button{width: 40%;
+background-color: #03264C;
+padding: 3%;
+border-radius: 30px;
+margin-top: 3%;}
+
+.login button:active{background-color: #EAC926;}
+.login a{text-decoration: none;
+background-color: #03264C;
+color: white;}
+
+
+    /*Media queries*/
+
+/*smarthphones*/
+@media (max-width:480px) {
+    nav ol{display: none;
+    }}
+
+/*tablet*/
+@media (min-width:481px) and (max-width:768px) {
+     main section{display: flex;
+        flex-wrap: wrap;}
+    .main-caja{width: 40%;}
+    nav{display: flex;
+        justify-content: space-around;
+        flex-wrap:wrap;}}
+
+/*desktops*/
+@media (min-width:769px){
+    main section{display: flex;
+        flex-wrap: wrap;}
+    .main-caja{width:22%;}
+    .login button{
+        width: 40vw;}
+    .login input{width: 40vw}}
